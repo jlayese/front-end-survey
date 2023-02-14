@@ -1,0 +1,548 @@
+
+<!-- saved from url=(0078)http://localhost:7000/?type=facts&language=English&keyword=fuel+in+philippines -->
+<html lang="en" style="scroll-behavior: auto;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Survey</title>
+    <script src="./Survey_files/jquery.min.js.download"></script>
+
+    <script src="./Survey_files/feather.min.js.download"></script>
+    <link href="./Survey_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="./Survey_files/font-awesome.min.css">
+    <script src="./Survey_files/script.js.download"></script>
+    <link href="./Survey_files/style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Survey_files/css" rel="stylesheet">
+</head>
+
+    <body>
+        <header>
+</header>
+            <!-- START CONTAINER -->
+            <div class="container p-5" id="main-container">
+                <h2>Generate Blog</h2>
+                <div class="row">
+                    <form>
+                        <div class="p-2">
+                            <p>Do you want paragraph based on facts or outline?</p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="type" value="facts">
+                                <label class="form-check-label" for="type">
+                                    Facts
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="type" value="outline">
+                                <label class="form-check-label" for="type">
+                                    Outline
+                                </label>
+                            </div>
+                            <!-- <div class="form-check">
+                                <input class="form-check-input" type="radio" name="type" value="mix">
+                                <label class="form-check-label" for="type">
+                                    Mix
+                                </label>
+                            </div> -->
+                        </div>
+
+                        <div class="p-2">
+                            <p>Choose your translation: </p>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="language" value="English" checked="">
+                                <label class="form-check-label" for="language">
+                                    English
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="language" value="Croatian">
+                                <label class="form-check-label" for="language">
+                                    Croatian
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="p-2">
+                            <div class="form-group">
+                                <label for="keyword">Keyword:</label>
+                                <input type="text" class="form-control" id="keyword" placeholder="Enter keyword" name="keyword">
+                            </div>
+                        </div>
+
+                        <div class="p-2 d-flex flex-wrap first-btn-con">
+                            <button type="submit" class="btn btn-primary" id="btn-generate-type">Generate again</button>
+                            <button type="submit" class="btn btn-primary display-none" id="btn-generate-facts">
+                                Generate facts
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="row p-2">
+                    <div class="db-example">
+                        <!-- <div id="result" class="text-container display-none"> -->
+                        <!-- </div> -->
+                        <textarea id="result" class="textarea text-container resize-ta display-none"></textarea>
+                        <!-- <span id="result" class="textarea" role="textbox" contenteditable></span></p> -->
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div id="result-par-2" class="">
+
+                        <!-- <div class="col-sm pt-2 pb-2 outline-container" data-id="1">
+                            <div class="row">
+                                <div class=" d-flex align-items-center">
+                                    <div class="col-sm-10">
+
+                                        <div class="form-group p-2">
+                                            <input type="text" class="form-control" id="outline-1" placeholder="Outline"
+                                                name="outline-1">
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-sm-2">
+                                        <button type="submit" class="btn btn-primary add-fact">
+                                            <i class="fa fa-plus" aria-hidden="true"></i> Add facts
+                                        </button>
+                                    </div> 
+
+                                </div>
+                            </div>
+
+                        </div> -->
+
+                    
+    <div class="col-sm pt-2 pb-2 outline-container" data-id="0">
+      <div class="row">
+        <div class=" d-flex align-items-center">
+
+          <div class="col-sm-10">
+            <div class="form-group p-2">
+                <input type="text" class="form-control" id="outline-0" name="outline-0" value="I. Introduction" "="">
+            </div>
+          </div>
+
+          <div class="col-sm-2">
+              <button type="submit" class="btn btn-primary add-fact">
+                  <i class="fa fa-plus" aria-hidden="true"></i> Add fact
+              </button>
+          </div>
+
+        </div>
+      </div>
+    
+    <div class="row">
+      <div class=" d-flex align-items-center outline-fact-container">
+        <div class="col-sm-10">
+
+            <div class="form-group p-2">
+                <input type="text" class="form-control" id="outline-0-fact-1" placeholder="Enter fact" name="keyword">
+            </div>
+
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class=" d-flex align-items-center outline-fact-container">
+        <div class="col-sm-10">
+
+            <div class="form-group p-2">
+                <input type="text" class="form-control" id="outline-0-fact-2" placeholder="Enter fact" name="keyword">
+            </div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+   
+    <div class="col-sm pt-2 pb-2 outline-container" data-id="1">
+      <div class="row">
+        <div class=" d-flex align-items-center">
+
+          <div class="col-sm-10">
+            <div class="form-group p-2">
+                <input type="text" class="form-control" id="outline-1" name="outline-1" value="1. Definition of Fuel" "="">
+            </div>
+          </div>
+
+          <div class="col-sm-2">
+              <button type="submit" class="btn btn-primary add-fact">
+                  <i class="fa fa-plus" aria-hidden="true"></i> Add fact
+              </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+   
+    <div class="col-sm pt-2 pb-2 outline-container" data-id="2">
+      <div class="row">
+        <div class=" d-flex align-items-center">
+
+          <div class="col-sm-10">
+            <div class="form-group p-2">
+                <input type="text" class="form-control" id="outline-2" name="outline-2" value="2. Overview of Croatia" "="">
+            </div>
+          </div>
+
+          <div class="col-sm-2">
+              <button type="submit" class="btn btn-primary add-fact">
+                  <i class="fa fa-plus" aria-hidden="true"></i> Add fact
+              </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+   
+    <div class="col-sm pt-2 pb-2 outline-container" data-id="3">
+      <div class="row">
+        <div class=" d-flex align-items-center">
+
+          <div class="col-sm-10">
+            <div class="form-group p-2">
+                <input type="text" class="form-control" id="outline-3" name="outline-3" value="II. Croatia&#39;s Fuel Sources" "="">
+            </div>
+          </div>
+
+          <div class="col-sm-2">
+              <button type="submit" class="btn btn-primary add-fact">
+                  <i class="fa fa-plus" aria-hidden="true"></i> Add fact
+              </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+   
+    <div class="col-sm pt-2 pb-2 outline-container" data-id="4">
+      <div class="row">
+        <div class=" d-flex align-items-center">
+
+          <div class="col-sm-10">
+            <div class="form-group p-2">
+                <input type="text" class="form-control" id="outline-4" name="outline-4" value="1. Natural Gas" "="">
+            </div>
+          </div>
+
+          <div class="col-sm-2">
+              <button type="submit" class="btn btn-primary add-fact">
+                  <i class="fa fa-plus" aria-hidden="true"></i> Add fact
+              </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+   
+    <div class="col-sm pt-2 pb-2 outline-container" data-id="5">
+      <div class="row">
+        <div class=" d-flex align-items-center">
+
+          <div class="col-sm-10">
+            <div class="form-group p-2">
+                <input type="text" class="form-control" id="outline-5" name="outline-5" value="2. Oil" "="">
+            </div>
+          </div>
+
+          <div class="col-sm-2">
+              <button type="submit" class="btn btn-primary add-fact">
+                  <i class="fa fa-plus" aria-hidden="true"></i> Add fact
+              </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+   
+    <div class="col-sm pt-2 pb-2 outline-container" data-id="6">
+      <div class="row">
+        <div class=" d-flex align-items-center">
+
+          <div class="col-sm-10">
+            <div class="form-group p-2">
+                <input type="text" class="form-control" id="outline-6" name="outline-6" value="3. Renewable Energy Sources" "="">
+            </div>
+          </div>
+
+          <div class="col-sm-2">
+              <button type="submit" class="btn btn-primary add-fact">
+                  <i class="fa fa-plus" aria-hidden="true"></i> Add fact
+              </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+   
+    <div class="col-sm pt-2 pb-2 outline-container" data-id="7">
+      <div class="row">
+        <div class=" d-flex align-items-center">
+
+          <div class="col-sm-10">
+            <div class="form-group p-2">
+                <input type="text" class="form-control" id="outline-7" name="outline-7" value="III. Croatia&#39;s Fuel Consumption" "="">
+            </div>
+          </div>
+
+          <div class="col-sm-2">
+              <button type="submit" class="btn btn-primary add-fact">
+                  <i class="fa fa-plus" aria-hidden="true"></i> Add fact
+              </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+   
+    <div class="col-sm pt-2 pb-2 outline-container" data-id="8">
+      <div class="row">
+        <div class=" d-flex align-items-center">
+
+          <div class="col-sm-10">
+            <div class="form-group p-2">
+                <input type="text" class="form-control" id="outline-8" name="outline-8" value="1. Total Energy Consumption" "="">
+            </div>
+          </div>
+
+          <div class="col-sm-2">
+              <button type="submit" class="btn btn-primary add-fact">
+                  <i class="fa fa-plus" aria-hidden="true"></i> Add fact
+              </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+   
+    <div class="col-sm pt-2 pb-2 outline-container" data-id="9">
+      <div class="row">
+        <div class=" d-flex align-items-center">
+
+          <div class="col-sm-10">
+            <div class="form-group p-2">
+                <input type="text" class="form-control" id="outline-9" name="outline-9" value="2. Sectoral Fuel Consumption" "="">
+            </div>
+          </div>
+
+          <div class="col-sm-2">
+              <button type="submit" class="btn btn-primary add-fact">
+                  <i class="fa fa-plus" aria-hidden="true"></i> Add fact
+              </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+   
+    <div class="col-sm pt-2 pb-2 outline-container" data-id="10">
+      <div class="row">
+        <div class=" d-flex align-items-center">
+
+          <div class="col-sm-10">
+            <div class="form-group p-2">
+                <input type="text" class="form-control" id="outline-10" name="outline-10" value="3. Fuel Transport" "="">
+            </div>
+          </div>
+
+          <div class="col-sm-2">
+              <button type="submit" class="btn btn-primary add-fact">
+                  <i class="fa fa-plus" aria-hidden="true"></i> Add fact
+              </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+   
+    <div class="col-sm pt-2 pb-2 outline-container" data-id="11">
+      <div class="row">
+        <div class=" d-flex align-items-center">
+
+          <div class="col-sm-10">
+            <div class="form-group p-2">
+                <input type="text" class="form-control" id="outline-11" name="outline-11" value="IV. Croatia&#39;s Fuel Industry" "="">
+            </div>
+          </div>
+
+          <div class="col-sm-2">
+              <button type="submit" class="btn btn-primary add-fact">
+                  <i class="fa fa-plus" aria-hidden="true"></i> Add fact
+              </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+   
+    <div class="col-sm pt-2 pb-2 outline-container" data-id="12">
+      <div class="row">
+        <div class=" d-flex align-items-center">
+
+          <div class="col-sm-10">
+            <div class="form-group p-2">
+                <input type="text" class="form-control" id="outline-12" name="outline-12" value="1. Oil and Gas Extraction and Refining" "="">
+            </div>
+          </div>
+
+          <div class="col-sm-2">
+              <button type="submit" class="btn btn-primary add-fact">
+                  <i class="fa fa-plus" aria-hidden="true"></i> Add fact
+              </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+   
+    <div class="col-sm pt-2 pb-2 outline-container" data-id="13">
+      <div class="row">
+        <div class=" d-flex align-items-center">
+
+          <div class="col-sm-10">
+            <div class="form-group p-2">
+                <input type="text" class="form-control" id="outline-13" name="outline-13" value="2. Renewable Energy Production" "="">
+            </div>
+          </div>
+
+          <div class="col-sm-2">
+              <button type="submit" class="btn btn-primary add-fact">
+                  <i class="fa fa-plus" aria-hidden="true"></i> Add fact
+              </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+   
+    <div class="col-sm pt-2 pb-2 outline-container" data-id="14">
+      <div class="row">
+        <div class=" d-flex align-items-center">
+
+          <div class="col-sm-10">
+            <div class="form-group p-2">
+                <input type="text" class="form-control" id="outline-14" name="outline-14" value="V. Conclusion" "="">
+            </div>
+          </div>
+
+          <div class="col-sm-2">
+              <button type="submit" class="btn btn-primary add-fact">
+                  <i class="fa fa-plus" aria-hidden="true"></i> Add fact
+              </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+   
+    <div class="col-sm pt-2 pb-2 outline-container" data-id="15">
+      <div class="row">
+        <div class=" d-flex align-items-center">
+
+          <div class="col-sm-10">
+            <div class="form-group p-2">
+                <input type="text" class="form-control" id="outline-15" name="outline-15" value="1. Summary of Croatia&#39;s Fuel Sources and Consumption" "="">
+            </div>
+          </div>
+
+          <div class="col-sm-2">
+              <button type="submit" class="btn btn-primary add-fact">
+                  <i class="fa fa-plus" aria-hidden="true"></i> Add fact
+              </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+   
+    <div class="col-sm pt-2 pb-2 outline-container" data-id="16">
+      <div class="row">
+        <div class=" d-flex align-items-center">
+
+          <div class="col-sm-10">
+            <div class="form-group p-2">
+                <input type="text" class="form-control" id="outline-16" name="outline-16" value="2. Outlook for Croatia&#39;s Fuel Industry" "="">
+            </div>
+          </div>
+
+          <div class="col-sm-2">
+              <button type="submit" class="btn btn-primary add-fact">
+                  <i class="fa fa-plus" aria-hidden="true"></i> Add fact
+              </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+   </div>
+                </div>
+
+                <div class="row p-2" id="par-con">
+                    <div class="row">
+                        <div class="col-sm db-example pt-2 pb-2">
+                            <button type="submit" class="btn btn-primary" id="btn-generate-par">
+                                Generate paragraph
+                            </button>
+                        </div>
+
+                        <div class="col-sm db-example pt-2 pb-2 display-none" id="container-mix">
+                            <button type="submit" class="btn btn-primary" id="btn-mix-generate-par">
+                                Generate facts
+                            </button>
+                        </div>
+
+                        <div class="col-sm db-example pt-2 pb-2">
+                            <div class="row">
+                                <div class=" d-flex align-items-center">
+                                    <div>
+                                        <input class="range" type="range" name="" value="0" min="0" max="1000" id="word-range">
+                                    </div>
+                                    <div class="m-2">
+                                        <input class="range-con" type="number" name="" value="0" min="0" max="4000" id="rangeValue">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- <div class="col-sm db-example pt-2 pb-2">
+                            <div class="row d-flex">
+                                <div class="col-sm col-8">
+                                    <input class="range" type="range" name="" value="0" min="0" max="1000"
+                                        id="word-range"></input>
+                                </div>
+                                <div class="col-sm col-2 m-2">
+                                    <input class="range-con" type="number" name="" value="0" min="0" max="4000"
+                                        id="rangeValue"></input>
+                                </div>
+                            </div>
+                        </div> -->
+
+
+                    </div>
+
+                    <div class="row">
+                        <div class="db-example pt-2 pb-2">
+                            <div id="result-par" class="text-container display-none"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row display-none" id="copy">
+                    <div class="col-3 db-example pt-2 pb-2">
+                        <button type="submit" class="btn btn-warning" id="copy-btn">Copy to clipboard</button>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- END CONTAINER -->
+    
+
+</body></html>
