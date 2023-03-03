@@ -2,7 +2,7 @@ window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 }
 $(document).ready(function () {
-  // fixes issue on laggy scrolling
+  /* fixes issue on laggy scrolling */
   // window.scrollTo(0, 0);
   $("html").css('scroll-behavior', 'auto');
 
@@ -35,10 +35,10 @@ $(document).ready(function () {
       '8. It seems there is not much I can do to shape my future.',
       '9. I find it enjoyable when I am able to multitask.',
       '10. I\'m usually excited about life, you know? Most days it\'s really fun and interesting.',
-      '11. I really don\'t like it when my usual routine gets disrupted.',
-      '12. It\'s totally in my hands how the rest of my life plays out.',
     ],
     [
+      '11. I really don\'t like it when my usual routine gets disrupted.',
+      '12. It\'s totally in my hands how the rest of my life plays out.',
       '13. My life is quite dull (boring).',
       '14. Establishing and maintaining a daily working schedule has proven to be beneficial for me, and I am quite content with this routine.',
       '15. The choices I make have a significant impact on my life.',
@@ -47,15 +47,18 @@ $(document).ready(function () {
       '18.	I look at situations objectively to reach my end goals.',
       '19.	People often tell me I inspire them.',
       '20.	I put my ideas in action whenever I can.',
+    ],
+    /** */
+    [
       '21.	Success in entrepreneurship requires hard work and persistence.',
       '22.	Making a lot of money in entrepreneurship is a matter of market chance.',
       '23.	I have noticed that there is a direct connection between the effort I put in and the rewards I receive.',
       '24.	The number of failed startups indicates that more entrepreneurs are not trying hard enough to make their startup work.',
-    ],
-    [
       '25.	Start-ups are a gamble for entrepreneurs.',
       '26.	When I have a good business idea, I can convince others to support it.',
       '27.	Succeeding with a business idea is really a matter of being luckier than the next person.',
+    ],
+    [
       '28.	If entrepreneurs know how to deal with people, they can easily lead people.',
       '29.	I have little influence over the way other people behave.',
       '30.	My accomplishments were the result of my own efforts, luck had little to do with it.',
@@ -74,6 +77,8 @@ $(document).ready(function () {
       '40. As an entrepreneur or potential entrepreneur, I am or would be afraid of the reputational consequences of not paying people.',
       '41. As an entrepreneur or potential entrepreneur, I am or would be afraid that the idea is not good enough for investors.',
       '42. As an entrepreneur or potential entrepreneur, I am or would be afraid that no one will be interested in the product/service.',
+    ],
+    [
       '43. As an entrepreneur or potential entrepreneur, I am or would be afraid that this business idea is too difficult to implement.',
       '44. As an entrepreneur or potential entrepreneur, I am or would be afraid that there won\'t be a market for the product/service.',
       '45. As an entrepreneur or potential entrepreneur, I am or would be afraid of not being able to finance the business.',
@@ -94,9 +99,9 @@ $(document).ready(function () {
       '57.	I continually remind myself that I am capable and proficient.	',
       '58.	I foster an atmosphere of openness and inclusivity, wherein individuals are encouraged to express their thoughts.',
       '59.	I can deal calmly and sensitively with others when they are in an emotional state.	',
-      '60.	I have the ability to recognize and comprehend the emotions of others in a conversation, and accurately match my own emotions to theirs.',
     ],
     [
+      '60.	I have the ability to recognize and comprehend the emotions of others in a conversation, and accurately match my own emotions to theirs.',
       '61.	Whenever I am engaged in conversation with someone, I give them my undivided attention. ',
       '62.	I can effectively persuade others to adopt my point of view without pressuring or punishing them.',
       '63.	It is my conviction that individuals can discover shared understanding and come to a mutually acceptable agreement.',
@@ -105,10 +110,10 @@ $(document).ready(function () {
       '66.	I really understand what and how I feel.',
       '67.	I always set goals for me and then I try my best to achieve them.',
       '68.	I am a self-motivated person.',
-      '69.	I\'m confident I\'ll reach the majority of my aspirations!',
-      '70.	When facing difficult tasks, I am certain that I will accomplish them.	',
     ],
     [
+      '69.	I\'m confident I\'ll reach the majority of my aspirations!',
+      '70.	When facing difficult tasks, I am certain that I will accomplish them.	',
       '71.	All in all, I believe that I\'m able to achieve the outcomes that are important to me.	',
       '72.	I\'m confident that I have what it takes to achieve success in entrepreneurship.',
       '73.	I will be able to successfully overcome many challenges.',
@@ -118,10 +123,10 @@ $(document).ready(function () {
       '77.	There are times when I tend to shy away from difficult jobs.',
       '78.	Often, I believe that difficult tasks or situations are beyond my control or capability.',
       '79.	I\'m usually fixated on what could go wrong or the mistakes I make.',
-      '80.	I\'m usually not too sure of myself and tend to doubt my abilities quite easily.',
     ],
     /** */
     [
+      '80.	I\'m usually not too sure of myself and tend to doubt my abilities quite easily.',
       '81.	Being able to solve problems',
       '82.	Managing money',
       '83.	Being creative',
@@ -132,9 +137,50 @@ $(document).ready(function () {
       '88.	Negotiating a deal',
       '89.	Resolving conflicts',
       '90.	Entrepreneurship potential',
-
     ],
-
+    /** */
+    [
+      {
+        question: '91. Tesla CEO Elon Musk acquired (bought) Twitter in 2022 for:',
+        choices: ['44 billion', '54 million', '44 million']
+      },
+      {
+        question: '92. Who is the director of Schindler\'s list movie?',
+        choices: ['Kingsley', 'Polanski', 'Spielberg']
+      },
+      {
+        question: '93. Hatred towards all people is?',
+        choices: ['Misanthropy', 'Genocide', 'Nihilism']
+      },
+      {
+        question: '94. Which land does the Nobel Prize winner in Literature Gabriel García Márquez come from?',
+        choices: ['Colombia', 'Spain', 'Venezuela']
+      },
+      {
+        question: '95. What is a hot chili sauce?',
+        choices: ['Tabasco', 'Curacao', 'Macao']
+      },
+      {
+        question: '96. Which is the most abundant metal on the Earth?',
+        choices: ['Iron', 'Aluminum', 'Copper']
+      },
+      {
+        question: '97. How is the fasting month in Islam called?',
+        choices: ['Sharia', 'Ramadan', 'Imam']
+      },
+      {
+        question: '98. Which language does the concept "Fata Morgana" come from?',
+        choices: ['Italian', 'Arabic', 'Swahili']
+      },
+      {
+        question: '99. What did Romans use as a mouthwash?',
+        choices: ['Vine', 'Vinegar', 'Urine']
+      },
+      {
+        question: '100. What language has the most words?',
+        choices: ['English', 'Arabic', 'Chinese']
+      },
+    ]
   ];
 
   const addNextPrevBtn = (i) => {
@@ -143,15 +189,15 @@ $(document).ready(function () {
         <input type="button" name="next" class="next action-button" value="Next" />
       `
     } else if (i > 0 && i < newQuestions.length - 1) {
+      // <input type="button" name="previous" class="previous action-button" value="Previous" />
       return `
-        <input type="button" name="previous" class="previous action-button" value="Previous" />
         <input type="button" name="next" class="next action-button" value="Next" />
       `
     } else {
+      // <input type="button" name="previous" class="previous action-button" value="Previous" />
       return `
-        <input type="button" name="previous" class="previous action-button" value="Previous" />
-        <a href="#" class="submit action-button" target="_top">Submit</a>
-      `
+        <input type="button" name="next" class="next action-button" value="Next" />
+        `
     }
   }
 
@@ -161,37 +207,12 @@ $(document).ready(function () {
     behavior: 'smooth'
   });
 
-  const populateFields = async (arr) => {
-    // console.log(arr)
-    // await arr.reduce(async (p, c, i) => {
-    //   await c.reduce(async (x, y, j) => {
-
-    //     if (y) {
-    //       console.log('#set-' + i + '-row-' + j + '-color-' + y)
-    //       $('#set-' + i + '-row-' + j + '-color-' + y).prop('checked', true)
-    //     }
-    //   }, 0)
-    // }, 0)
-
-    let
-      i = 0,
-      j = 0
-    for (const ar of arr) {
-      for (const y of ar) {
-        if (y) {
-          console.log('#set-' + i + '-row-' + j + '-color-' + y)
-
-          $('input[id=set-' + i + '-row-' + j + '-color-' + y + ']').on('click', function (event) {
-            if (!$('input[type=checkbox]:checked').length) {
-              $(this).prop('checked', true);
-            }
-          });
-          // $('#set-' + i + '-row-' + j + '-color-' + y).prop('checked', true)
-        }
-        j++
-      }
-      i++
-    }
+  const addInstruction = (instruction) => {
+    return `
+      <div class="row p-5">
+        <h2 class="form-headers">${instruction}</h2>
+      </div>
+    `;
   }
 
   const createFieldSet = (setId) => {
@@ -206,16 +227,16 @@ $(document).ready(function () {
   const addQuestion = (gid, qid, question) => {
     return `
     <div class="question-container" id="set-${gid}-que-${qid}">
-      <div class="row">
+      <div class="">
           <div class="title d-flex justify-content-center">
               <div>
                   <p class="text-center">${question}</p>
               </div>
           </div>
       </div>
-      <div class="row p-0">
+      <div class="">
           <div
-              class="row custom-radios d-flex align-items-center justify-content-center question-container-row">
+              class="custom-radios d-flex align-items-center justify-content-center question-container-row">
               <div
                   class="d-flex align-items-center justify-content-between p-3 question-container-main-row">
                   <div>
@@ -287,11 +308,127 @@ $(document).ready(function () {
     `}
     ;
 
-  const addProgressBar = (arr) => {
-    const li = arr.reduce((p, c, i) => {
+  const addLastSet = (gid, qid, q = {}) => {
+    q.new_choices = '';
+    if (q?.choices) {
+      q.new_choices = q.choices.reduce((p, c, i) => {
+        p += `
+    <li>
+      <input 
+        type="radio" 
+        value="${i}" 
+        id="set-${gid}-row-${qid}-choice-${i}" 
+        class="pick" 
+        name="set_${gid}_choice[${qid}]"
+        >
+        <label for="set-${gid}-row-${qid}-choice-${i}">${c}</label>
+         <div class="check">
+          <div class="inside"></div>
+        </div>
+      </li>
+    `
+        return p;
+      }, '');
+    }
+
+    // return `
+    //   <tr>
+    //       <td class="x">
+    //           <div class="radio-container" data-id="${qid}">
+    //               <h2>${q.question}</h2>
+    //               <ul>
+    //                   ${q.new_choices}
+    //               </ul>
+    //           </div>
+    //       </td>
+    //       <td class="y">
+    //           <label class="form-check-custom danger">
+    //             <span class="valuePadding">
+    //               <input 
+    //                 type="number" 
+    //                 class="confidence" 
+    //                 name="set-${gid}-row-${qid}-confidence"
+    //                 min="33"
+    //                 max="100"
+    //                 required
+    //                 >%
+    //               </span>
+    //           </label>
+    //       </td>
+    //   </tr>
+    // `;
+
+    return `
+      <div class="row m-0 p-0 div-table-row">
+          <div class="col-sm-8 div-col-question">
+              <div class="radio-container" data-id="${qid}">
+                  <h2>${q.question}</h2>
+                  <ul>
+                      ${q.new_choices}
+                  </ul>
+              </div>
+          </div>
+          <div class="col-sm-4 d-flex justify-content-center">
+            <div class="div-rate-container">
+              <label class="form-check-custom danger align-self-center">
+                <span class="valuePadding">
+                  <input 
+                    type="number" 
+                    class="confidence" 
+                    name="set-${gid}-row-${qid}-confidence"
+                    min="33"
+                    max="100"
+                    required
+                    >%
+                  </span>
+              </label>
+            </div>
+          </div>
+      </div>
+    `;
+  }
+
+  const addTable = () => {
+    // return `
+    // <table class="table table-bordered">
+    //   <thead>
+    //       <tr>
+    //           <th class="table-title">QUESTION</th>
+    //           <th class="table-title">CONFIDENT</th>
+    //       </tr>
+    //   </thead>
+    //   <tbody class="table-body">
+    //   </tbody>
+    // </table>
+    // `;
+    return `
+    <div class="div-table">
+      <div class="row">
+          <div class="col-sm-8">
+            <div class="row-title">
+              <h2 class="m-0">Question</h2>
+            </div>
+          </div>
+          <div  class="col-sm-4">
+            <div class="row-title">
+              <h2 class="m-0">Confident</h2>
+            </div>
+          </div>
+      </div>
+      <div class="table-body row p-0 m-0">
+      </div>
+    </div>
+    `
+
+
+  }
+
+  const addProgressBar = (r) => {
+    const li = r.group.reduce((p, c, i) => {
+      const pBar = `<p class="pbar-title">${r.titles[i]}</p>`
       const l = i === 0
-        ? '<li class="active"></li>'
-        : '<li></li>'
+        ? `<li class="active">${pBar}</li>`
+        : `<li>${pBar}</li>`
       p += l;
       return p;
     }, '')
@@ -313,24 +450,60 @@ $(document).ready(function () {
   const barMenu = $('i.fa-bars');
   const dataCon = $('.data-container');
   const form = $('#msform');
+  const chart = $('.chart');
+  const errMod = $('#errorModal');
   let navHeight = headerDiv ? headerDiv.outerHeight() : 0;
   let width = $(window).width();
   const result = [];
   let currentField = 0;
   let newResult, locResult;
+  const url = window.location.href.includes('https')
+    ? 'https://survey-app-v2.herokuapp.com/api/v1/questions'
+    : 'http://localhost:5501/api/v1/questions';
 
   newResult = Array
     .from({ length: newQuestions.length }, (v, i) => i)
     .map((d, i) => newQuestions[i].map(o => null))
 
   const r = new Set()
-  r.group = ['a', 'b', 'c', 'd', 'e'];
-  r.a = [0, 1, 2];
-  r.b = [3];
-  r.c = [4, 5, 6];
-  r.d = [7];
+  r.group = ['a', 'b', 'c', 'd', 'e', 'f'];
+  r.a = [0, 1]; // 1 (1 - 20)
+  r.b = [2, 3]; // 2 (21 - 35)
+  r.c = [4, 5]; // 5 (36 - 50)
+  r.d = [6, 7]; // 3 (51 - 68)
+  r.e = [8, 9]; // 4 (69 - 90)
+  r.f = [10];   // 6 (91 - 100)
+  r.headers = [
+    // 0
+    'Consider each statement bellow and mark your level of agreement with each statement.',
+    // 36
+    'As an entrepreneur or potential entrepreneur, I am or would be afraid …',
+    // 51
+    'Consider each statement bellow and mark your level of agreement with each statement.',
+    // 81
+    'Using a five-point rating scale please rate yourself against your peers!  (Your Peers = people in your high-school or university class or working colleagues) on the following dimensions.',
+    // 91
+    'Circle one of the three given answers and then indicate how confident you are that your answer is correct, on a scale from 33% to 100% confident.'
+  ];
+  r[0] = 'Consider each statement bellow and mark your level of agreement with each statement.';
+  r[35] = 'As an entrepreneur or potential entrepreneur, I am or would be afraid …';
+  r[50] = 'Consider each statement bellow and mark your level of agreement with each statement.';
+  r[80] = 'Using a five-point rating scale please rate yourself against your peers!  (Your Peers = people in your high-school or university class or working colleagues) on the following dimensions.';
+  r[90] = 'Circle one of the three given answers and then indicate how confident you are that your answer is correct, on a scale from 33% to 100% confident.'
 
-  form.append(addProgressBar(r.group));
+  r.titles = [
+    "Entrepreneurial Hardiness",
+    "Internal Locus of Control",
+    "Entrepreneurial Fear of Failure",
+    "Emotional Intelligence",
+    "Entrepreneurial Self-Efficacy",
+    "Overconfidence",
+    // "Entrepreneurial Personality Potential",
+  ]
+
+  form.append(addProgressBar(r));
+  // form.append(appendFormHeaders()) // remove if instructions are already added
+
   // if (!localStorage.result) {
   //   localStorage.result = JSON.stringify(
   //     Array
@@ -365,13 +538,14 @@ $(document).ready(function () {
         console.log(e, r[e], currentField, i, r[e].includes(currentField))
 
         $("#progressbar li").eq(i).addClass("active");
+        // $(".form-headers").text(r.headers[i])
         currPBarIndex++;
       }
     })
   }
 
   const inActiveProgressBar = (cField) => {
-    console.log(r)
+    console.log('Previous > ', r)
     // idenfity current group of current field
     const x = r.group.filter(e => {
       if (r[e] && r[e].length && r[e].includes(cField)) {
@@ -388,6 +562,8 @@ $(document).ready(function () {
     if (x && x.length && y && y.length && x[0] !== y[0]) {
       const fIndex = r.group.findIndex(l => l === x[0])
       $("#progressbar li").eq(fIndex).removeClass("active");
+      console.log('F INDEX', fIndex)
+      // $(".form-headers").text(r.headers[fIndex - 1])
     }
   }
 
@@ -440,7 +616,22 @@ $(document).ready(function () {
     }
   }
 
-  setNav(width);
+  const setTitle = (w) => {
+    if (w < 650) {
+      const titleList = r.titles.reduce((p, c) => {
+        p += `<li>${c}</li>`
+        return p
+      }, '');
+      if (!$('.mob-p-title').length) {
+        $('<ol class="mob-p-title"></ol>').insertBefore('#msform');
+        $('.mob-p-title').append(titleList);
+        $('.pbar-title').addClass('display-none');
+      }
+    } else {
+      $('.mob-p-title').remove();
+      $('.pbar-title').removeClass('display-none');
+    }
+  }
 
   $(window).resize(function () {
     navHeight = headerDiv.outerHeight()
@@ -448,7 +639,11 @@ $(document).ready(function () {
 
     console.log('[ Width ]', width, navHeight)
     setNav(width);
+    setTitle(width);
   });
+
+  setNav(width);
+  setTitle(width)
 
   const openNav = () => {
     console.log('removing')
@@ -484,18 +679,6 @@ $(document).ready(function () {
     document.documentElement.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
-  const updateFooter = () => {
-    var docHeight = $(window).height();
-    var footerHeight = $('.footer').height();
-    var footerTop = $('.footer').position().top + footerHeight;
-
-    if (footerTop < docHeight) {
-      $('.footer').css('margin-top', 10 + (docHeight - footerTop) + 'px');
-    }
-  }
-
-
-
   // questions.forEach((p, i) => {
   //   i = i + 1;
   //   const questionBody = parent.find('.question-container:first').clone(true, true);
@@ -517,20 +700,58 @@ $(document).ready(function () {
   //   parent.append(questionBody)
   // });
 
+  let cnt = 0;
   newQuestions.forEach((p, i) => {
+    const refTitles = [0, 35, 50, 80, 90];
     const formContainer = $('#msform');
-
-
     formContainer.append(createFieldSet(i))
-
+    console.log(cnt)
     const setContainer = $('#set-' + i);
+    if (i === 10) {
+      setContainer.append(addInstruction(r[90]))
+      setContainer.append(addTable());
+      const table = $('.table-body');
+      p.forEach((q, j) => {
+        table.append(addLastSet(i, j, q))
+      })
 
-    p.forEach((q, j) => {
-      setContainer.append(addQuestion(i, j, q))
-    });
+      setContainer.after(addNextPrevBtn(i))
+    } else {
 
-    setContainer.after(addNextPrevBtn(i))
+      p.forEach((q, j) => {
+        console.log(cnt)
+        if (refTitles.includes(cnt)) setContainer.append(addInstruction(r[cnt]))
+        setContainer.append(addQuestion(i, j, q))
+        cnt++;
+      });
+
+      setContainer.after(addNextPrevBtn(i))
+    }
   })
+
+
+  /** Add mail form */
+  const addMailForm = () => {
+    const formContainer = $('#msform');
+    formContainer.append(createFieldSet(11));
+    const setContainer = $('#set-' + 11);
+    const mail = `
+      <div class="">
+        <div class="data-container p-0">
+          <form>
+              <h3>Claim your results</h3>
+              <input type="text" placeholder="Your Name" id="name">
+              <input type="text" placeholder="Your Email" id="email">
+              <button id="submit">Get results</button>
+          </form> 
+        </div>
+      </div> 
+    `;
+
+    setContainer.append(mail)
+  }
+
+  addMailForm()
 
   /** */
   let current_fs, next_fs, previous_fs; //fieldsets
@@ -542,17 +763,24 @@ $(document).ready(function () {
   $('.next').on('click', function () {
     // event.preventDefault()
     const isComplete = isCompleteFieldSet();
-    console.log('Is Complete Before Next', currentField, newResult, isComplete);
+    /** COMMENT OUT TO BYPASS NEXT VALIDATION */
     if (!isComplete) {
-      scrollBack();
-      return
+      // scrollBack();
+      // return
     }
-    // else {
-    // if (!isComplete) return;
+
+    if (currentField === 10) {
+      const isComplete = onSubmit();
+      if (!isComplete.status) {
+        errMod.find('.error-message').text(isComplete.message);
+        errMod.modal('show');
+        return;
+      }
+    }
+
 
     if (animating) return false;
     animating = true;
-    console.log('clicked next')
     // current_fs = $(this).parent();
     // next_fs = $(this).parent().next();
 
@@ -588,6 +816,11 @@ $(document).ready(function () {
       complete: function () {
         current_fs.hide();
         animating = false;
+
+        /** Scroll on top of fieldset */
+        $('html, body').animate({
+          scrollTop: $('#msform').offset().top
+        }, 1000);
       },
       //this comes from the custom easing plugin
       easing: 'easeInOutBack'
@@ -595,14 +828,9 @@ $(document).ready(function () {
     /** */
 
     currentField++;
-    console.log(currentField)
     goTop();
     activeProgressBar();
     // }
-
-
-
-
   });
 
   $('.previous').click(function () {
@@ -637,6 +865,10 @@ $(document).ready(function () {
       complete: function () {
         current_fs.hide();
         animating = false;
+
+        $('html, body').animate({
+          scrollTop: $('#msform').offset().top
+        }, 1000);
       },
       //this comes from the custom easing plugin
       easing: 'easeInOutBack'
@@ -686,7 +918,7 @@ $(document).ready(function () {
     });
 
 
-    console.log(currentField, par.attr('id'), newResult)
+    console.log('CURRENT FIELD', currentField, par.attr('id'), newResult)
     saveResult();
     // const isComplete = newResult[fieldSetIndex].every(n => n === n);
     // console.log('Is Complete ', fieldSetIndex, newResult, isComplete);
@@ -696,22 +928,145 @@ $(document).ready(function () {
     //   // dataCon.animate({ scrollTop: 0 + (-navHeight) }, 1000);
     // }
   });
-  /** */
+
+  $('.pick').on('change', function () {
+    const par = $(this).closest('.radio-container');
+    const nextQuestion = $(par).next();
+    const fieldSet = $(this).closest('fieldset');
+    const fieldSetIndex = $(fieldSet).attr('data-id');
+    const radIndex = $(par).attr('data-id');
+
+    Array.from({ length: newQuestions[fieldSetIndex].length }, (v, i) => i).forEach(function (ti, i) {
+      const nResult = {
+        choice: null,
+        confidence: null
+      }
+
+      nResult.choice = +$(`input[name='set_${fieldSetIndex}_choice[${i}]']:checked`).attr('value');
+      nResult.confidence = +$(`input[name='set-${fieldSetIndex}-row-${i}-confidence`).val();
+      newResult[fieldSetIndex][i] = nResult;
+    });
+
+    // if (nextQuestion.length !== 0 && 
+    //   newQuestions[fieldSetIndex][radIndex] && ) {
+    //   $('html, body').animate({
+    //     scrollTop: $(`#${nextQuestion.attr('id')}`).offset().top + (-navHeight)
+    //   }, 1000);
+
+    // }
+
+    console.log(currentField, newResult, radIndex, typeof radIndex)
+  });
+
+  /* Check ratings */
+  const checkVal = (elem) => {
+    const a = parseInt(elem.val());
+    const str = a + '';
+    console.log(a, str, str.length, typeof a)
+    if (str.length >= 2 && (a < 33 || a > 100)) {
+      elem.val(33)
+    }
+  }
+
+  $('.confidence').on('keyup', function () {
+    const par = $(this).closest('.radio-container');
+    const nextQuestion = $(par).next();
+    const fieldSet = $(this).closest('fieldset');
+    const fieldSetIndex = $(fieldSet).attr('data-id');
+    const radIndex = +$(par).attr('data-id');
+
+    Array.from({ length: newQuestions[fieldSetIndex].length }, (v, i) => i).forEach(function (ti, i) {
+      const nResult = {
+        choice: null,
+        confidence: null
+      }
+
+      nResult.choice = +$(`input[name='set_${fieldSetIndex}_choice[${i}]']:checked`).attr('value');
+      nResult.confidence = +$(`input[name='set-${fieldSetIndex}-row-${i}-confidence`).val();
+      newResult[fieldSetIndex][i] = nResult;
+    });
+
+    // if (nextQuestion.length !== 0 && 
+    //   newQuestions[fieldSetIndex][radIndex] && ) {
+    //   $('html, body').animate({
+    //     scrollTop: $(`#${nextQuestion.attr('id')}`).offset().top + (-navHeight)
+    //   }, 1000);
+
+    // }
+    setTimeout(() => checkVal($(this)), 1000);
+
+    console.log(currentField, newResult, radIndex, typeof radIndex)
+  });
+
+
+  const onSubmit = () => {
+    /* Check part part */
+    const lastIdx = 10;
+    Array.from({ length: newQuestions[lastIdx].length }, (v, i) => i).forEach(function (ti, i) {
+      const nResult = {
+        choice: null,
+        confidence: null
+      }
+
+      nResult.choice = +$(`input[name='set_${lastIdx}_choice[${i}]']:checked`).attr('value');
+      nResult.confidence = +$(`input[name='set-${lastIdx}-row-${i}-confidence']`).val();
+      newResult[lastIdx][i] = nResult;
+    });
+
+    const partA = newResult.slice(0, -1).flat();
+    const partB = newResult.slice(-1)[0];
+
+    console.log(partA, partB)
+
+    const A = partA.every(v => typeof v === 'number' && !isNaN(v));
+    const B = partB.every(v => (typeof v.choice === 'number' && !isNaN(v.choice)) && (typeof v.confidence === 'number' && !isNaN(v.confidence) && (v.confidence >= 33 && v.confidence <= 100)))
+
+    console.log(' A AND B', A, B)
+
+    if (A && B) {
+      return {
+        status: true
+      }
+    } else if (A && !B) {
+      return {
+        status: false,
+        message: 'Make sure to answer between 33 to 100 on last part!'
+      }
+    } else if (!A && B) {
+      return {
+        status: false,
+        message: 'Some questions left unanswered!'
+      }
+    } else {
+      return {
+        status: false,
+        message: 'Please make sure to answer all questions as per instruction!'
+      }
+    }
+  }
 
   $('form').on('submit', async function (event) {
     event.preventDefault();
+    // const errMod = $('#errorModal');
+
+    const isComplete = onSubmit();
+    if (!isComplete.status) {
+      errMod.find('.error-message').text(isComplete.message);
+      errMod.modal('show');
+      return;
+    }
+
+    const reqData = {
+      data: newResult
+    }
 
     const apiCall = async () => {
       const name = $('#name').val().trim();
       const email = $('#email').val().trim();
-      const errMod = $('#errorModal');
       let errMsg = '';
-      console.log(name, email, result)
+      console.log(name, email)
 
       // validation
-      if (!result.length)
-        errMsg = 'Please fill all the survey questions';
-
       if (!name.length)
         errMsg = 'Please enter your name';
 
@@ -730,60 +1085,14 @@ $(document).ready(function () {
         return;
       }
 
-
-      const errMessages = result.reduce((p, c, i) => {
-        p = [...p];
-
-        if (!c) p.push(i + 1)
-
-        return p;
-      }, [])
-
-      const tempErrMessages = errMessages.join(', ');
-
-      if (errMessages.length) {
-        // alert(`Please answer question number(s):${tempErrMessages} `)
-        errMsg = tempErrMessages;
-
-        errMod.find('.error-message').text(errMsg)
-        errMod.modal('toggle');
-
-        var nq = $('.question-container').eq(errMessages[0] - 1);
-        $('html, body').animate({
-          scrollTop: nq.offset().top + (-navHeight)
-        }, 1000);
-      }
-
-      // // Call API
-      // $.ajax({
-      //   url: "https://node-wp-v1.herokuapp.com/api/v1/questions",
-      //   type: "post",
-      //   data: JSON.stringify({
-      //     data: [...result],
-      //     name,
-      //     email,
-      //   }),
-      //   success: function (response) {
-      //     console.log(response)
-      //     // You will get response from your PHP page (what you echo or print)
-      //   },
-      //   error: function (jqXHR, textStatus, errorThrown) {
-      //     console.log(textStatus, errorThrown);
-      //   }
-      // });
-
-
-
       const asyncPostCall = async () => {
+        reqData.name = name;
+        reqData.email = email;
+
+        console.log('REQ >', reqData)
+
         try {
           $('#submit').html('<i class="fa fa-spinner fa-spin"></i> Get results');
-
-          const url = window.location.href.includes('https')
-            ? 'https://node-wp-v1.herokuapp.com/api/v1/questions'
-            : 'http://localhost:5501/api/v1/questions';
-
-          console.log(url)
-
           const response = await fetch(url, {
             method: 'POST',
             headers: {
@@ -791,23 +1100,23 @@ $(document).ready(function () {
             },
             body: JSON.stringify({
               // your expected POST request payload goes here
-              data: result,
-              name,
-              email
+              ...reqData,
             })
           });
           const data = await response.json();
 
           console.log(data);
           if (data.status === 'success') {
-            const { result, score } = data.data
-            const successMsg = `Score : ${score} \nResult : ${result}`;
+            const result = data.data
 
-            const successMod = $('#successModal');
-            successMod.find('.score').text(score);
-            successMod.find('.result').text(result);
-            successMod.modal('toggle');
+            $('#successModal').modal('toggle');
             $('#submit').html('Get results');
+            // chart.removeClass('display-none');
+            // initChart(result);
+
+            $('html, body').animate({
+              scrollTop: $('.chart').offset().top
+            }, 1000);
 
             grecaptcha.ready(function () {
               grecaptcha.execute('6Lfn55MjAAAAAPyeQNtgAs27c479whQ3pHuu2kVD', { action: 'submit' }).then(function (token) {
@@ -817,7 +1126,6 @@ $(document).ready(function () {
             });
 
           }
-
         } catch (error) {
           console.log(error)
         }
@@ -828,7 +1136,6 @@ $(document).ready(function () {
     }
 
     await apiCall()
-
   });
 
 
@@ -836,5 +1143,14 @@ $(document).ready(function () {
     var regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return regex.test(email);
   }
+
+
+
+
+  const initApp = () => {
+    chart.addClass('display-none')
+  }
+
+  initApp()
 
 });
